@@ -1,0 +1,74 @@
+@import '_all.scss'; 
+
+.main-title{
+    text-align: center;
+    margin-top: 80px;
+    .mainhome-btn {margin-top: 40px;}
+    a {
+        text-decoration: none;
+        color: $white;
+        background-color: $black;
+        padding: 8px 24px 6px;
+        font-weight: 500;
+        border-radius: 20px;
+    }
+}
+
+.homework-container {
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    margin: 80px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px;
+    list-style: none;
+    a{text-decoration: none;}
+    .card {
+        width: 200px;
+        height: 300px;
+        position: relative;
+        color: $white;
+        padding: 24px;
+        transition: transform 0.3s;
+    }
+    .card:hover {transform: scale(0.9);}
+    .hw-title {margin-top: 12px;}
+    .hw-date {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 12px;
+        color: rgba($color: $white, $alpha: 0.3);
+    }
+    @media screen and (max-width: 768px) {
+        .card {
+            width: 250px;
+            height: 350px;
+        }
+    }
+}
+
+//카드 컬러들
+.homework-container {
+    .hw1 {background-color: #b7b7b8;}
+    .hw2 {background-color: #ababab;}
+    .hw3 {background-color: #a1a1a1;}
+    .hw4 {background-color: #9a9a9b;}
+    .hw5 {background-color: #909090;}
+    .hw6 {background-color: #868786;}
+    .hw7 {background-color: #7e7e7e;}
+    .hw8 {background-color: #767676;}
+    .hw9 {background-color: #696a6a;}
+    .hw10 {background-color: #5f6061;}
+    .hw11 {background-color: #575657;}
+    .hw12 {background-color: #525251;}
+    .hw13 {background-color: #474646;}
+    .hw14 {background-color: #3d3d3c;}
+    .hw15 {background-color: #323232;}
+    .hw16 {background-color: #2b2b2a;}
+    .hw17 {background-color: #212121;}
+    .hw18 {background-color: #161716;}
+    .hw19 {background-color: #0d0d0d;}
+    .hw20 {background-color: #000000;}
+}

@@ -1,0 +1,312 @@
+* {
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: url("../img/main/favicon.png") 20 30, auto;
+}
+
+.homework-main-title {
+  text-align: center;
+  padding-top: 80px;
+}
+
+.homework-main-title h4 {
+  margin-top: 20px;
+  -webkit-animation-name: title-description;
+          animation-name: title-description;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+}
+
+@-webkit-keyframes title-description {
+  0% {
+    -webkit-transform: translateX(4000px);
+            transform: translateX(4000px);
+  }
+  80% {
+    -webkit-transform: translateX(-10px) skew(-20deg);
+            transform: translateX(-10px) skew(-20deg);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes title-description {
+  0% {
+    -webkit-transform: translateX(4000px);
+            transform: translateX(4000px);
+  }
+  80% {
+    -webkit-transform: translateX(-10px) skew(-20deg);
+            transform: translateX(-10px) skew(-20deg);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.memo-container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 700px;
+  padding: 20px 32px 40px 32px;
+  margin: 32px auto 100px;
+  border-radius: 10px;
+}
+
+.memo-container h5 {
+  color: #4498F2;
+  margin-bottom: 8px;
+}
+
+.memo-container h3 {
+  color: #000;
+}
+
+.memo-container .memo-date {
+  font-size: 12px;
+  color: #999;
+  margin-left: 8px;
+  font-weight: 400;
+}
+
+.memo-container .memo-text {
+  margin-top: 16px;
+  line-height: 24px;
+  color: #000;
+}
+
+.memo-line {
+  width: 90%;
+  max-width: 700px;
+  margin: 60px auto 0px;
+  opacity: 50%;
+}
+
+.main-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #fff;
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  padding: 16px 20px 16px 20px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+}
+
+.main-btn:hover {
+  background-color: #000;
+  color: #fff;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.main-btn:active {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.Main-btn {
+  margin: auto;
+  display: block;
+  padding: 12px 44px;
+  border-radius: 25px;
+  border: 1px solid;
+}
+
+.m-btn {
+  padding: 6px 24px;
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+
+.white-btn {
+  background-color: #fff;
+  color: #000;
+  font-weight: 500;
+}
+
+.white-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.black-btn {
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+}
+
+.black-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.main-title {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.main-title .mainhome-btn {
+  margin-top: 40px;
+}
+
+.main-title a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 8px 24px 6px;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+.homework-container {
+  width: 90%;
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 80px auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px;
+  list-style: none;
+}
+
+.homework-container a {
+  text-decoration: none;
+}
+
+.homework-container .card {
+  width: 200px;
+  height: 300px;
+  position: relative;
+  color: #fff;
+  padding: 24px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.homework-container .card:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.homework-container .hw-title {
+  margin-top: 12px;
+}
+
+.homework-container .hw-date {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .homework-container .card {
+    width: 250px;
+    height: 350px;
+  }
+}
+
+.homework-container .hw1 {
+  background-color: #b7b7b8;
+}
+
+.homework-container .hw2 {
+  background-color: #ababab;
+}
+
+.homework-container .hw3 {
+  background-color: #a1a1a1;
+}
+
+.homework-container .hw4 {
+  background-color: #9a9a9b;
+}
+
+.homework-container .hw5 {
+  background-color: #909090;
+}
+
+.homework-container .hw6 {
+  background-color: #868786;
+}
+
+.homework-container .hw7 {
+  background-color: #7e7e7e;
+}
+
+.homework-container .hw8 {
+  background-color: #767676;
+}
+
+.homework-container .hw9 {
+  background-color: #696a6a;
+}
+
+.homework-container .hw10 {
+  background-color: #5f6061;
+}
+
+.homework-container .hw11 {
+  background-color: #575657;
+}
+
+.homework-container .hw12 {
+  background-color: #525251;
+}
+
+.homework-container .hw13 {
+  background-color: #474646;
+}
+
+.homework-container .hw14 {
+  background-color: #3d3d3c;
+}
+
+.homework-container .hw15 {
+  background-color: #323232;
+}
+
+.homework-container .hw16 {
+  background-color: #2b2b2a;
+}
+
+.homework-container .hw17 {
+  background-color: #212121;
+}
+
+.homework-container .hw18 {
+  background-color: #161716;
+}
+
+.homework-container .hw19 {
+  background-color: #0d0d0d;
+}
+
+.homework-container .hw20 {
+  background-color: #000000;
+}
+/*# sourceMappingURL=main.css.map */

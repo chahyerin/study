@@ -1,0 +1,35 @@
+@import '_all.scss';
+
+body {
+    background-color: #eeeeee;
+  }
+  
+  .card-background {
+    height: 3000px;
+    margin-top: 800px;
+    margin-bottom: 1600px;
+    background-color: #fff;
+  }
+  
+  .title {
+    position: -webkit-sticky;
+    position: sticky;
+    text-align: center;
+    font-size: 32px;
+    top: 100px;
+    padding-top: 100px;
+  }
+  
+  .card-box {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 400px;
+    margin-top: 200px;
+  }
+  
+  .card-box img {
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 700px;
+  }

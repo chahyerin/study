@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../scss/hw13.css" rel="stylesheet">
+    <link rel="icon" href="../img/main/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="card-background">
+        <div class="title">
+            <h1>It's as easy<br>as it sounds.</h1>
+        </div>
+        <div class="card-box">
+            <img src="../img/hw13/card1.png" alt="">
+        </div>
+        <div class="card-box">
+            <img src="../img/hw13/card2.png" alt="">
+        </div>
+        <div class="card-box">
+            <img src="../img/hw13/card3.png" alt="">
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script>
+        $(window).scroll(function(){
+            var height = $(window).scrollTop();
+            console.log(height);
+
+            // 1080~1625까지 스크롤 바  내리면 
+            // 첫째 카드의 opacity 1~0으로 서서히 변경해줘
+            var FirstCardOpacity = (-1/545) * height + 1625/545;
+            var SecondCardOpacity = (-1/542) * height + 2378/542;
+            // 같은 높이인데 스케일을 1~0.8로 서서히 변경해줘
+            var FirstCardScale = (-1/2725) * height + 761/545;
+            
+            $('.card-box').eq(0).css('opacity', FirstCardOpacity);
+            $('.card-box').eq(1).css('opacity', SecondCardOpacity);
+            $('.card-box').eq(0).css('transform', `scale(${FirstCardScale})`);
+
+        })
+
+
+
+    </script>
+
+
+</body>
+</html>
